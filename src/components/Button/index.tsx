@@ -2,7 +2,7 @@ import { ContainerButton } from "./styles";
 
 interface ButtonProps {
   title: string;
-  onClick?: () => void;
+  onClick: () => void;
 }
 
 export function Button({ title, onClick }: ButtonProps) {

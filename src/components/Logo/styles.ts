@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const ContainerLogo = styled.img`
+export const Container = styled.img`
   height: 2.5rem;
 `;
