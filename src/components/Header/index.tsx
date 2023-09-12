@@ -4,19 +4,24 @@ import { Container } from "./styles";
 
 import { Logo } from "../Logo";
 import { Button } from "../Button";
+import { NewStickyModal } from "../NewStickyModal";
 
 export function Header() {
-  const [number, setNumber] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  function increment() {
-    setNumber(number + 1);
+  function handleOpenModal() {
+    setIsModalOpen(true);
+  }
+
+  function handleCloseModal() {
+    setIsModalOpen(false);
   }
 
   return (
     <Container>
       <Logo />
-      <p>{number}</p>
-      <Button title="Adicionar Lembrete" onClick={increment} />
+      <Button title="Adicionar Lembrete" onClick={handleOpenModal} />
+      <NewStickyModal isOpen={isModalOpen} onRequestClose={handleCloseModal} />
     </Container>
   );
 }

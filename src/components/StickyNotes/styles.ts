@@ -19,26 +19,33 @@ export const Container = styled.div`
     margin: 3rem 0;
 
     > h1 {
-      color: var(--purple-900);
-      font-family: "Roboto", sans-serif;
+      color: var(--yellow-900);
+      font-family: "Roboto";
     }
   }
 `;
 
 export const Grid = styled.div`
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 2.5rem;
-
-  width: 90%;
-
-  margin-bottom: 5rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 
   > div {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
+
+    width: 90%;
+
+    margin-bottom: 5rem;
+  }
+
+  > div > div {
     display: flex;
     flex-direction: column;
+
     align-items: center;
 
     height: 15rem;
@@ -46,16 +53,15 @@ export const Grid = styled.div`
     padding: 1rem;
     gap: 1rem;
 
-    background: var(--purple-300);
+    background-color: var(--yellow-900);
     border-radius: 0.4rem;
 
     > h2 {
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto";
       color: var(--font-black);
     }
-
     > p {
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto";
       width: 90%;
 
       overflow: auto;

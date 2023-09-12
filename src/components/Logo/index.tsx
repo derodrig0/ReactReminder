@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-import RRLogo from '../../assets/images/RRLogo.jpg'
+import RRLogo from '../../assets/images/RRLogo2.jpg'
 
 export function Logo() {
   return (

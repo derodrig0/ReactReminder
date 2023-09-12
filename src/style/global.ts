@@ -2,9 +2,11 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 :root {
-  --purple-300: rgba(85,49,255,0.25);
-  --purple-600: #5531ff;
-  --purple-900: #150057;
+  --yellow-300: rgba(184,147,44,0.25);
+  //--purple-600: #5531ff;
+  //--purple-900: #150057;
+  --yellow-600: #b8930c;
+  --yellow-900: #f7d354;
 
   --font-black: #1c1c1c;
   --font-white: #fff;
